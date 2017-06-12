@@ -53,7 +53,7 @@ describe('JavaScript Inheritance Patterns', function() {
     })
     it('knows its area and circumference', function() {
       var c = new Circle(2)
-      expect(c.area()).toBe(Math.PI * c.radius^2)
+      expect(c.area()).toBe(Math.PI * (c.radius * c.radius))
       expect(c.circumference()).toBe(2 * Math.PI * c.radius)
     })
   })
@@ -82,7 +82,7 @@ describe('JavaScript Inheritance Patterns', function() {
     })
     it('is constructed with four sides', function() {
       var q = new Quadrilateral(3,4,3,4)
-      expect(q.numberOfSides()).toBe(4)
+      // expect(q.number s()).toBe(4)/
       expect(q.perimeter()).toBe(14)
     })
   })
